@@ -27,7 +27,25 @@ public class Commons extends Base {
 		System.out.println("Plan id : "+part[1]);
 		Assert.assertEquals(part[1], OR.getProperty(Expected));
 		
+		
 	}
 	
+	//Code to fetch and compare(Assert) URL
+	public void urlComp(String Expected){
+		boolean expectedURL = true;
+		boolean str = driver.getCurrentUrl().contentEquals(OR.getProperty(Expected));
+			
+		Assert.assertEquals(str, expectedURL);
+				
+	}
+	
+	public void navigateBack(){
+		driver.navigate().back();
+	}
+	
+	public void close(){
+		driver.quit();
+		
+	}
 
 }

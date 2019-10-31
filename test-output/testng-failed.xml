@@ -5,8 +5,8 @@
     <classes>
       <class name="testcases.TC_simplePlan">
         <methods>
-          <include name="TC_03"/>
           <include name="launchBrowser"/>
+          <include name="TC_02"/>
         </methods>
       </class> <!-- testcases.TC_simplePlan -->
     </classes>
