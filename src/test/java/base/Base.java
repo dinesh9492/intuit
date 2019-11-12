@@ -27,12 +27,13 @@ public void launchBrowser() {
 	//Code to load parameters from Config file
 	try {
 		fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\OR.properties");
+		OR.load(fis);
 	} catch (FileNotFoundException e) {
 			e.printStackTrace();
 	}
-	try {
+	/*try {
 		OR.load(fis);
-	} catch (IOException e) {
+	}*/ catch (IOException e) {
 		e.printStackTrace();
 	}
 	
@@ -41,7 +42,7 @@ public void launchBrowser() {
 	
 	// launch URL
 	
-	driver.get("https://quickbooks.intuit.com/");
+	driver.get("https://quickbooks.intuit.com/accounting/");
 	
 	driver.manage().window().maximize();
 	

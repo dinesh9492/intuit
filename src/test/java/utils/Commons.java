@@ -7,13 +7,22 @@ import base.Base;
 
 public class Commons extends Base {
 
-
+	//Code to scroll down
 	public void scrollDown() {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,3000)");
 	}
 	
+	
+	public void scrollUp() {
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-500)");
+	}
+	
+	
+	//Code to click on X button on Newsletter
 	public void newsletter(){
 		
 		driver.findElement(By.xpath("//span[@class='smallCloseBtn']")).click();
@@ -30,6 +39,14 @@ public class Commons extends Base {
 		
 	}
 	
+	/*public static void waitAndClick(WebElement element){		   
+		 waits.waitForClickableElement(element);
+		 element.click();
+		    	   
+	   }*/
+	
+	
+	
 	//Code to fetch and compare(Assert) URL
 	public void urlComp(String Expected){
 		boolean expectedURL = true;
@@ -39,13 +56,26 @@ public class Commons extends Base {
 				
 	}
 	
+	//Code to click on Browser back
 	public void navigateBack(){
 		driver.navigate().back();
 	}
 	
+	//Code to quit the driver
 	public void close(){
 		driver.quit();
+	}
+	
+	public void tognscrollup(){
 		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-500)");
+		driver.findElement(By.xpath("//div[@data-product='QuickBooks Online Simple Start']//div[@data-di-id='#showpayrollbuynow_en-ss']")).click();
+	}
+	
+	/*Code to enable toggle for self service payroll*/
+	public void toggle(){
+		driver.findElement(By.xpath("//div[@data-product='QuickBooks Online Simple Start']//div[@data-di-id='#showpayrollbuynow_en-ss']")).click();
 	}
 
 }

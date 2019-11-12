@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19054" started-at="2019-10-31T12:17:51Z" finished-at="2019-10-31T12:18:10Z">
+  <suite name="Default suite" duration-ms="41205" started-at="2019-11-12T01:32:13Z" finished-at="2019-11-12T01:32:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19054" started-at="2019-10-31T12:17:51Z" finished-at="2019-10-31T12:18:10Z">
-      <class name="testcases.TC_simplePlan">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.TC_simplePlan@ae45eb6]" name="launchBrowser" is-config="true" duration-ms="9931" started-at="2019-10-31T12:17:41Z" finished-at="2019-10-31T12:17:51Z">
+    <test name="Default test" duration-ms="41205" started-at="2019-11-12T01:32:13Z" finished-at="2019-11-12T01:32:54Z">
+      <class name="testcases.TC_accounting">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testcases.TC_accounting@ae45eb6]" name="launchBrowser" is-config="true" duration-ms="7502" started-at="2019-11-12T01:32:05Z" finished-at="2019-11-12T01:32:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="TC_02()[pri:0, instance:testcases.TC_simplePlan@ae45eb6]" name="TC_02" duration-ms="19022" started-at="2019-10-31T12:17:51Z" finished-at="2019-10-31T12:18:10Z">
+        <test-method status="PASS" signature="TC_03()[pri:0, instance:testcases.TC_accounting@ae45eb6]" name="TC_03" duration-ms="41166" started-at="2019-11-12T01:32:13Z" finished-at="2019-11-12T01:32:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02 -->
-      </class> <!-- testcases.TC_simplePlan -->
+        </test-method> <!-- TC_03 -->
+      </class> <!-- testcases.TC_accounting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

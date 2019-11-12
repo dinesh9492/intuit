@@ -17,7 +17,7 @@ public class PlanandPricing extends Base {
 		}
 		
 	}
-	
+		
 	public void ss_buynow(){
 		
 		driver.findElement(By.xpath("//a[contains(@data-wa-link, 'ssbuynow-diy')]")).click();
@@ -52,19 +52,19 @@ public class PlanandPricing extends Base {
 	public void email(){
 		
 		driver.findElement(By.id("ius-email")).clear();
-		driver.findElement(By.id("ius-email")).sendKeys("dineshbhargava92@gmail.com");
+		driver.findElement(By.id("ius-email")).sendKeys("vemuru.padma@gmail.com");
 		
 	}
 	
 	public void confirm_email(){
 		
-		driver.findElement(By.id("ius-confirm-email-address")).sendKeys("dineshbhargava92@gmail.com");
+		driver.findElement(By.id("ius-confirm-email-address")).sendKeys("vemuru.padma@gmail.com");
 		
 	}
 	
 	public void first_name(){
 		
-		driver.findElement(By.id("ius-first-name")).sendKeys("dinesh");
+		driver.findElement(By.id("ius-first-name")).sendKeys("Padma");
 		
 	}
 	
