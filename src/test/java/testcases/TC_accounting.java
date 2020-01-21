@@ -16,7 +16,8 @@ public class TC_accounting extends Base{
 	public void TC_03() throws InterruptedException{
 		
 		//driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
-		
+
+			
 		acc.ss_abuynow();
 		com.urlComp("configId_1");
 		com.navigateBack();
@@ -67,9 +68,12 @@ public class TC_accounting extends Base{
 		System.out.println("End of TC_03");
 		
 		driver.quit();
+
 		
+		/*acc.sendEstimatesLink();
+		acc.acc_SendEstimatesModal();*/
 		
-		
+		/*acc.mspbuynow();*/
 		
 	}
 

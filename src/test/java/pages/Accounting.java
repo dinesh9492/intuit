@@ -49,7 +49,19 @@ ele.click();
 		driver.findElement(By.xpath("//div[@data-product='QuickBooks Advanced']//a[contains(@data-wa-link,'advbuynow_en')]")).click();
 	}
 	
-
+	//Code for Buy now CTA in sub nav
+	public void mspbuynow(){
+		driver.findElement(By.xpath("//div[contains(@class,'subnav-button-container')]//a[contains(@data-wa-link,'SecondaryNav_BuynowCTA')]")).click();
+	}
+	
+	public void sendEstimatesLink(){
+		driver.findElement(By.xpath("//div[@data-product='QuickBooks Online Simple Start']//span[text()='Send estimates']")).click();
+	}
+	
+	public void acc_SendEstimatesModal(){
+		driver.findElement(By.xpath("//div[@id = 'popup6']//span[@class = 'closePopup']")).click();
+	}
+	
 
 }
 
